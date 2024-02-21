@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color:#FFFFEC ;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch{
+background-color: #5FBDFF;
+box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+padding: 50px;
+height: 300px;
+width: 330px;
+border-radius: 30px;
+}
+
+.stopwatch>p{
+    font-size: 50px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    margin-top: 90px;
+}
+
+.btn button{
+    padding: 12px;
+    border-radius: 10px;
+    color: #0766AD;
+    border: none;
+}
