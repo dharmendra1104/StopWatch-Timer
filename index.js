@@ -1,15 +1,18 @@
 let start = document.querySelector('.start')
 let stop = document.querySelector('.stop')
 let reset = document.querySelector('.reset')
+let stric=document.querySelector('.stic')
 
 let milisecond = 0;
 let second = 0;
 let minute = 0;
+let deg=second*6
 
 let timerid;
 start.addEventListener('click', () => {
     timerid = setInterval(() => {
         milisecond++
+        
         // console.log(second)
 
         if (milisecond >= 100) {
@@ -52,6 +55,9 @@ stop.addEventListener('click', () => {
 
 reset.addEventListener('click',()=>{
     clearInterval(timerid)
+    second=0
+    minute=0
+    hour=0
     seconds.innerText = "00"
     minutes.innerText = "00"
     hours.innerText = "00"
